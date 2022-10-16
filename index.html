@@ -36,7 +36,14 @@
             <a><button class="cta" href="https://www.youtube.com/watch?v=TfpOY1IZWDc&ab_channel=LessonsinMemeCulture"><i class="fa-brands fa-youtube"></i>Miranos en YouTube</button></a>
         </div>
         <div class="content-right">
-            <img src="/assets/fondo.png" alt="fondo">
+            <picture>
+                <source srcset="/assets/fondo.png"       
+                media="(min-width: 990px)">
+                <source srcset="/assets/fondo-tablet.png"  
+                media="(min-width: 750px)">
+                <img srcset="/assets/fondo-mobile.png"   
+                alt="fachada de cine">
+            </picture>
         </div>
    </main>
 </body>
