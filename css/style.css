@@ -28,6 +28,8 @@ header{
 h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 h2{
@@ -410,135 +412,16 @@ img{
     }
 }
 
+/* ---- formulario ----- */
 
-
-/* ---------- mi trabajo -----------------*/
-
-/* mi trabajo */
-
-.mi-trabajo {
-  background-color: blue;
-  color: red;
-  text-align: center;
-}
-
-.section__subtitle--mi-trabajo {
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
-
-.portfolio{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.portfolio__item {
-  background-color: var(--clr-accent);
-  overflow: hidden;
-
-}
-
-.portfolio__img {
-  transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
-  opacity 500ms linear;
-  
-
-}
-
-.portfolio__img:hover, portfolio_item:focus .portfolio__img{
-  transform: scale(1.2);
-  opacity: .75
-  
-}
-
-
-
-/* ------- formulario ------*/
-
-.form{
-    box-sizing: border-box;
+.formulario{
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    overflow: hidden;
+    font-size: 16px;
 }
 
-.caja-formulario{
-    background-color: #e286ab;
-    border-radius: 5px;
-    width: 50%;
-    justify-content: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.form{
-    padding: 30px 30px;
-}
-
-.form-control{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-.form-control label{
-    margin-bottom: 5px;
-}
-
-.form-control input{
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-.form-control i {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.form-control small{
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    left:0;
-}
-
-.form.control-exito i.fa-check-circle {
-    visibility: visible;
-    color: green;
-}
-
-.form.control-exito i.fa-exclamation-circle {
-    visibility: visible;
-    color: red;
+.formulario p{
+    padding-top: 10px;
 }
 
 
-.form-control.exito input {
-    border-color: green;
-    border-width: 2px;
-}
-
-.form-control.error input {
-    border-color: red;
-    border-width: 2px;
-}
-
-.form-control.error small{
-    color: red;
-    visibility: visible;
-}
-
-.form-control input {
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: inherit;
-}
-
-.form-control small {
-    position: absolute;
-    bottom: 0;
-    left:0;
-}

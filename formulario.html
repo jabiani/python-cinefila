@@ -9,17 +9,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Silkscreen&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c6806e4c7a.js" crossorigin="anonymous"></script>
+    <script>
+        function formulario() {
+            var name =
+                document.forms.RegForm.Name.value;
+            var email =
+                document.forms.RegForm.EMail.value;
+            var phone =
+                document.forms.RegForm.Telephone.value;
+            var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;                                 
+            var regName = /\d+$/g;                                 
+
+            if (name == "" || regName.test(name)) {
+                window.alert("Por favor ingresá tu nombre sin caracteres especiales.");
+                name.focus();
+                return false;
+            }
+             
+            if (email == "" || !regEmail.test(email)) {
+                window.alert("Por favor escribí una dirección de email válida");
+                email.focus();
+                return false;
+            }
+            return window.confirm("EXITO")
+            return window.location.replace("http://google.com");
+        }
+
+        function submit() {
+            window.location.href = 'https://www.google.com/';
+        }
+    </script>
+
 
     <title>Python Cinéfila - Subscribite</title>
-</head>
-<body>
     <header>
         <div class="logo">
-            <img src="/assets/logo.png" alt="serpiente con pochoclo" width="150px">
+            <img src="/assets/logo.png" alt="serpiente con pochoclo" width="120px">
         </div>
         <nav>
             <div class="navegacion">
             <ul>
+                <br>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/favoritas.html">Favoritas</a></li>
                 <li><a href="/buscar.html">Buscar</a></li>
@@ -27,41 +57,50 @@
             </ul>
             </div>
         </nav>
-    </header>
-    <div class="pagina-formulario">
-        <h1>Subscribite a nuestras novedades</h1>
-        <div class="caja-formulario">
-            <h2>Creá una cuenta</h2>
-        
-        <form class="form" id="form">
-            <div class="form-control exito">
-                <label>Nombre</label>
-                <input type="text" placeholder="Juan Perez" id="nombre">
-                <i class="fa fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error</small>
-            </div>
-            <div class="form-control error">
-                <label>Fecha de nacimiento</label>
-                <input type="date" placeholder="01/01/1980" id="nacimiento">
-                <i class="fa fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Debes ser mayor de 18 años</small>
-            </div>
-            <div class="form-control">
-                <label>Mail</label>
-                <input type="text" placeholder="juanperez@mail.com" id="mail">
-                <i class="fa-solid fa-circle-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error</small>
-            </div>
-            <button class="cta">Subscribirse</button>
-        </div>
-    </div>
+       </header> 
+    
+</head>
 
 
 
+    <div>
+      <h1 style="text-align: center;">Suscribite a nuestras novedades</h1>
+      <div class="formulario">
+        <form name="RegForm" onsubmit="return formulario()" method="post">
+            
+            <p>Nombre: <input type="text"
+                                        size="65" name="Name" /></p>
+            
+                        <br />
+                        
+                        
+            <p>E-mail: <input type="text"
+                                        size="65" name="EMail" /></p>
+            
+                        <br />
+                        
+                        
+            <p>Telefono: <input type="text"
+                                    size="65" name="Telephone" /></p>
+            
+                        <br />
+            
+                        
+            <p>
+                        
+                    
+            <p>
+                            <input type="submit"
+                                value="Enviar" class ="cta" name="submit" />
+                            <input type="reset"
+                                value="Limpiar formulario" class = "cta" name="Reset" />
+                        </p>
+            
+                    </form>
+      </div>
+    </div>           
+                
+                
 
-    </form>
 </body>
 </html>
