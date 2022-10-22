@@ -31,12 +31,14 @@
                 email.focus();
                 return false;
             }
-            return window.confirm("Confirmar subscripción")
+            
+            return window.alert("Subscripción exitosa");
             return window.location.replace("https://python-cinefila.netlify.app/exito.html");
+
         }
 
         function submit() {
-            window.location.href = 'https://python-cinefila.netlify.app/exito.html';
+            return window.location.href = 'https://python-cinefila.netlify.app/exito.html';
         }
     </script>
 
@@ -91,7 +93,7 @@
                     
             <p>
                             <input type="submit"
-                                value="Enviar" class ="cta" name="submit" />
+                                value="Enviar" class ="cta" action="submit" />
                             <input type="reset"
                                 value="Limpiar formulario" class = "cta" name="Reset" />
                         </p>

@@ -425,3 +425,17 @@ img{
 }
 
 
+/* ---- peliculas ----*/
+.pelicula{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.pelicula h3{
+    color:#AF0448;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
