@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Silkscreen&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c6806e4c7a.js" crossorigin="anonymous"></script>
+
+    <title>Python Cinéfila - Subscribite</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="serpiente con pochoclo" width="150px">
+        </div>
+        <nav>
+            <div class="navegacion">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/favoritas.html">Favoritas</a></li>
+                <li><a href="/buscar.html">Buscar</a></li>
+                <li><a href="/formulario.html" class="signup-btn">Subscribite</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="pagina-formulario">
+        <h1>Subscribite a nuestras novedades</h1>
+        <div class="caja-formulario">
+            <h2>Creá una cuenta</h2>
+        
+        <form class="form" id="form">
+            <div class="form-control exito">
+                <label>Nombre</label>
+                <input type="text" placeholder="Juan Perez" id="nombre">
+                <i class="fa fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control error">
+                <label>Fecha de nacimiento</label>
+                <input type="date" placeholder="01/01/1980" id="nacimiento">
+                <i class="fa fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Debes ser mayor de 18 años</small>
+            </div>
+            <div class="form-control">
+                <label>Mail</label>
+                <input type="text" placeholder="juanperez@mail.com" id="mail">
+                <i class="fa-solid fa-circle-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+            <button class="cta">Subscribirse</button>
+        </div>
+    </div>
+
+
+
+
+    </form>
+</body>
+</html>

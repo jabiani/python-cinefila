@@ -90,3 +90,15 @@ window.addEventListener('click', (event) => {
         searchList.classList.add('hide-search-list');
     }
 });
+
+
+/// formulario ///
+
+const form = document.getElementById('form');
+const nombre = document.getElementById('nombre');
+const nacimiento = document.getElementById('nacimiento');
+const mail = document.getElementById('mail');
+
+form.addEventListener('enviar', (e) => {
+    e.preventDefault();
+})

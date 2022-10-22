@@ -16,6 +16,10 @@ h1 {
     transition: ease-in 2s;
 }
 
+h2 {
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 0;
