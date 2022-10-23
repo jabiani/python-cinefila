@@ -88,11 +88,30 @@ main {
   width: 40%;
   align-items: center;
   justify-content: center;
+
 }
+
+
+@media screen and (min-width: 300px) {
+    main h1 {
+      font-size: 20px;
+    }
+  }
+
+@media screen and (min-width: 450px) {
+    main h1 {
+      font-size: 30px;
+    }
+  }
+
+@media screen and (min-width: 990px) {
+    main h1 {
+      font-size: 60px;
+    }
+  }
 
 main h1{
   font-family: 'Silkscreen', cursive;
-  font-size: 60px;
   color: #AF0448;
   text-transform: capitalize;
   transition: ease-in 3s;
