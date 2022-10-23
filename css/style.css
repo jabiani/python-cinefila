@@ -127,7 +127,6 @@ main h1{
 }
 
 main p{
-  font-size: 16px;
   font-weight: 400;
   color:#35213A;
   line-height: 32px;
@@ -136,15 +135,23 @@ main p{
 
 @media screen and (min-width: 450px) {
     main p {
-        size: 10px;
+        font-size: 10px;
     }
   }
 
   @media screen and (min-width: 600px) {
     main p {
-        size: 12px;
+        font-size: 12px;
     }
   }
+
+  @media screen and (min-width: 990px) {
+    main p {
+        font-size: 16px;
+
+    }
+
+  
 
 .cta{
   padding:15px 30px;
