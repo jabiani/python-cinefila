@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serpiente Cinefila - Buscar</title>
     <link rel = "stylesheet" href = "/css/style.css">
+    <script src="https://kit.fontawesome.com/c6806e4c7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -25,58 +26,30 @@
     </header>
     
     <div class = "wrapper">
-        <!-- search container -->
         <div class = "search-container">
             <div class = "search-element">
                 <h3>Buscá la película:</h3>
                 <input type = "text" class = "form-control" placeholder="Escribí el título acá..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
 
                 <div class = "search-list" id = "search-list">
-                    <!-- list here -->
-                    <!-- <div class = "search-list-item">
-                        <div class = "search-item-thumbnail">
-                            <img src = "medium-cover.jpg">
-                        </div>
-                        <div class = "search-item-info">
-                            <h3>Guardians of the Galaxy Vol. 2</h3>
-                            <p>2017</p>
-                        </div>
-                    </div> -->
+
                 </div>
             </div>
         </div>
-        <!-- end of search container -->
-
-        <!-- result container -->
         <div class = "container">
             <div class = "result-container">
                 <div class = "result-grid" id = "result-grid">
-                    <!-- movie information here -->
-                    <!-- <div class = "movie-poster">
-                        <img src = "medium-cover.jpg" alt = "movie poster">
-                    </div>
-                    <div class = "movie-info">
-                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
-                        <ul class = "movie-misc-info">
-                            <li class = "year">Year: 2017</li>
-                            <li class = "rated">Ratings: PG-13</li>
-                            <li class = "released">Released: 05 May 2017</li>
-                        </ul>
-                        <p class = "genre"><b>Genero:</b> Action, Adventure, Comedy</p>
-                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
-                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
-                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
-                        <p class = "language"><b>Language:</b> English</p>
-                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
-                    </div> -->
                 </div>
             </div>
         </div>
-        <!-- end of result container -->
     </div>
-
-
-    <!-- movie app js -->
     <script src = "script.js"></script>
 </body>
+<footer class="footer">              
+    <a href="mailto:python-cinefila@gmail.com" class="footer-link">python-cinefila@gmail.com</a><br>
+        <a class="social-list__item"><a class="social-list__list" href="https://www.youtube.com/watch?v=wMYfnbDL0fo&t=3s&ab_channel=ShowTime-TopClips/"><i class="fa-brands fa-youtube"></i> YouTube</a><br>
+        <a class="social-list__item"><a class="social-list__list" href="https://www.instagram.com/movies"><i class="fa-brands fa-square-instagram"></i> Instagram</a><br>
+    </ul>
+</footer>
+</html>
 </html>

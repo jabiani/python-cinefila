@@ -15,14 +15,15 @@ body{
 }
 
 header{
-  height: 100px;
+  height: 75px;
   background: #AF0448;
   display: flex;
   justify-content: space-around;
   font-family: inherit;
   font-size: 20px;
-  vertical-align: center;
+  vertical-align: middle;
   text-align: center;
+  color: white;
 }
 
 h1 {
@@ -45,6 +46,7 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
 ul{
   display: flex;
   list-style-type: none;
@@ -95,8 +97,8 @@ main {
 @media screen and (min-width: 300px) {
     main h1 {
         font-size: 20px;
-        padding-top: 150px;
-        margin-top: 150px;
+        padding-top: 300px;
+        margin-top: 300px;
     }
   }
 
@@ -133,6 +135,18 @@ main p{
   margin:30px 0
 }
 
+@media screen and (min-width: 450px) {
+    main p {
+        size: 10px;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    main p {
+        size: 12px;
+    }
+  }
+
 .cta{
   padding:15px 30px;
   background: #AF0448;
@@ -152,9 +166,9 @@ main p{
 
 
 :root{
-    --md-dark-color: rgb(252, 241, 241);
-    --dark-color: rgb(218, 216, 216);
-    --light-dark-color: rgb(232, 189, 189);
+    --md-dark-color: #fffae3;
+    --dark-color: #d4d0c1;
+    --light-dark-color: #f3dff5;
     --yellow-color: #d4aa11;
 
 }
@@ -176,7 +190,7 @@ img{
 }
 .wrapper{
     min-height: 100vh;
-    background-color: var(--dark-color);
+    background-color: #d4d0c1;
 }
 .wrapper .container{
     max-width: 1200px;
@@ -184,7 +198,7 @@ img{
     padding: 0 1rem;
 }
 .search-container{
-    background-color: var(--md-dark-color);
+    background-color: #fffae3;
     height: 180px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,7 +232,7 @@ img{
         align-self: center;
     margin-right: 1rem;
     font-size: 2rem;
-    color: #fff;
+    color: #35213A;
     font-weight: 500;
     margin-bottom: 1.5rem;
 }
@@ -229,7 +243,7 @@ img{
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     outline: none;
-    color: var(--light-dark-color);
+    color: #f3dff5;
     width: 350px;
 }
 .search-list{
@@ -241,11 +255,11 @@ img{
     z-index: 10;
 }
 .search-list .search-list-item{
-    background-color: var(--light-dark-color);
+    background-color: #f3dff5;
     padding: 0.5rem;
-    border-bottom: 1px solid var(--dark-color);
+    border-bottom: 1px solid #fffae3;
     width: calc(350px - 8px);
-    color: #fff;
+    color: #35213A;
     cursor: pointer;
     -webkit-transition: background-color 200ms ease;
     -o-transition: background-color 200ms ease;
@@ -286,7 +300,7 @@ img{
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 .search-list::-webkit-scrollbar-thumb{
-    background-color: var(--yellow-color);
+    background-color: #d4aa11;
     outline: none;
     border-radius: 10px;
 }
@@ -307,14 +321,13 @@ img{
 }
 .movie-info{
     text-align: center;
-    color: #fff;
+    color: black;
     padding-top: 3rem;
 }
 
-/* movie info stylings */
 .movie-title{
     font-size: 2rem;
-    color: var(--yellow-color);
+    color: #d4aa11;
 }
 .movie-misc-info{
     list-style-type: none;
@@ -333,7 +346,6 @@ img{
     font-weight: 500;
 }
 .movie-info .rated{
-    background-color: var(--yellow-color);
     padding: 0.4rem;
     margin: 0 0.4rem;
     border-radius: 3px;
@@ -348,7 +360,6 @@ img{
     margin: 1rem 0;
 }
 .movie-info .genre{
-    background-color: var(--light-dark-color);
     display: inline-block;
     padding: 0.5rem;
     border-radius: 3px;
@@ -357,16 +368,13 @@ img{
     max-width: 400px;
     margin: 1rem auto;
 }
-.movie-info .language{
-    color: var(--yellow-color);
-    font-style: italic;
-}
+
 .movie-info .awards{
     font-weight: 300;
     font-size: 0.9rem;
 }
 .movie-info .awards i{
-    color: var(--yellow-color);
+    color: #d4aa11;
     margin: 1rem 0.7rem 0 0;
 }
 
@@ -462,4 +470,25 @@ img{
     color:#AF0448;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.avances {
+    padding-top: 300px;
+}
+
+
+/* ---- footer ----- */
+
+.footer{
+    background: #AF0448;
+    color: white;
+    text-align: center;
+    
+    padding: 2.5em 0;
+}
+
+.footer a {color: inherit}
+
+.footer_link:hover, .social-list:hover{
+    opacity: .6
 }
