@@ -127,10 +127,7 @@ main h1{
 }
 
 main p{
-  font-weight: 400;
   color:#35213A;
-  line-height: 32px;
-  margin:30px 0
 }
 
 @media screen and (min-width: 450px) {
